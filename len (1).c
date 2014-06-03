@@ -1,17 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-struct Record{
-int accountNum;
-float balance;
-};
-struct node
-{
-struct Record rec;
-struct node *next;
-};
-typedef struct node Node;
-typedef Node * node_ptr;
 
 node_ptr build_list();
 void traverse_list(node_ptr head);
