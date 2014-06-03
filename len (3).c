@@ -108,26 +108,3 @@ return 0;
 }
 
 
-node_ptr add_item(int accountNo, float balance, node_ptr head )
-{
-node_ptr newnode = malloc(sizeof(Node));
-newnode ->rec. accountNum = accountNo;
-newnode ->rec. balance = balance; 
-newnode -> next = head;
-head =newnode;
-return head;
-}
-
-
-int length(node_ptr head)
-{
-node_ptr current = head;
-int count = 0;
-while(current != NULL && current ->rec. accountNum !=0)
-{
-count ++;
-current = current -> next;
-}
-return count;
-}
-
