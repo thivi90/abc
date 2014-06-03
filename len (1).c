@@ -1,11 +1,4 @@
 
-node_ptr build_list();
-void traverse_list(node_ptr head);
-int remove_item(int accountNo, node_ptr head);
-node_ptr add_item(int accountNo, float balance, node_ptr head );
-int length(node_ptr head);
-
-int main()
 {
 node_ptr accounts = build_list();
 traverse_list(accounts);
